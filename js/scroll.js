@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
             } else {
-                entry.target.classList.remove("show"); // 🔥 Ahora desaparece cuando ya no está en pantalla
+                entry.target.classList.remove("show"); //Ahora desaparece cuando ya no está en pantalla
             }
         });
     }, {
