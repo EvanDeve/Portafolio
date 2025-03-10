@@ -1,0 +1,76 @@
+/* Estilos base (los que ya tienes) */
+
+@media (max-width: 1300px) {
+    .hero-info {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .hero-container {
+        margin: auto;
+    }
+    .hero-image {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 820px) {
+    .social-medias {
+        margin-right: 0;
+    }
+    .hero-container{
+        display: flex;
+        margin: auto;
+    }
+    .hero-image{
+        margin: auto;
+        margin-top: 20px;
+        
+    }
+    .hero-container h1 {
+        font-size: 30px;
+    }
+    .hero-container p {
+        font-size: 14px;
+    }
+    .projects-tittle h1 {
+        font-size: 48px;
+    }
+    .project img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-container h1 {
+        font-size: 28px;
+    }
+    .hero-container p {
+        font-size: 12px;
+    }
+    .links a {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .knowledge-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    .project img {
+        width: 100%;
+    }
+    .footer_links-container nav {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
