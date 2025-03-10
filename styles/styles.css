@@ -12,7 +12,7 @@ body {
     color: white;
 }
 header{
-    background: url(/img/fondo.png);
+    background: url(fondo.png);
 }
 
 
@@ -24,7 +24,6 @@ header{
     padding: 20px;
     max-width: 100%;
     z-index: 2;
-    position: relative;
 }
 
 .name-nav {
@@ -47,13 +46,29 @@ header{
 
 
 /*HERO CONTAINER*/
+.hero-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+    height: 90vh;
+}
+.image-container{
+    background-color: #313131;
+}
+.hero-image{
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
 .hero-container {
     flex: 1;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
 }
 .hero-container h1 {
     font-size: 64px;
@@ -91,32 +106,7 @@ header{
 .links{
     margin-top: 10px;
 }
-.hero-info{
-    display: flex;
-    align-items: start;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    max-width: 90%;
-    margin: auto;
-    position: relative;
-    height: 100vh;
-}
 
-
-
-
-/*IMAGE CONTAINER*/
-.image-container{
-    background-color: #313131;
-}
-.hero-image{
-    flex: 1;
-    z-index: 1;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin: 30px auto;
-}
 
 
 
