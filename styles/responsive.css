@@ -38,6 +38,12 @@
     .hero-container p {
         font-size: 14px;
     }
+    .scrum-info-opt, .experience-info-opt{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .projects-tittle h1 {
         font-size: 48px;
     }
@@ -62,6 +68,14 @@
         align-items: center;
         gap: 30px;
     }
+    .methodologies-tittle h1{
+        font-size: 30px;
+    }
+    .scrum-info-opt, .experience-info-opt{
+        display: flex;
+        flex-direction: column;
+    }
+   
     .projects {
         grid-template-columns: 1fr;
     }
