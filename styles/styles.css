@@ -129,7 +129,107 @@ header{
 }
 
 
+/*METHODOLOGY CONTAINER*/
+.methodologies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    margin: 70px auto;
+    max-width: 70%;
+}
+.methodologies-tittle {
+    grid-column: span 5 / span 5;
+    margin: auto;
+}
+.methodologies-tittle h1{
+    font-size: 64px;
+    font-weight: lighter;
+    text-align: center;
+    border-bottom: 2px solid white;
+    width: 600px;
+}
+.scrum-container, .experience-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.scrum-container {
+    grid-column: span 5 / span 5;
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+.experience-container {
+    grid-column: span 5 / span 5;
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+.scrum-container .scrum-tittle h2{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.experience-container .experience-tittle h2{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.scrum-container .scrum-info #scrum-info{
+    font-size: 20px;
+    font-weight: 400;
+}
+.experience-container .experience-info #experience-info{
+    font-size: 20px;
+    font-weight: 400;
+}
+.scrum-info-opt{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.experience-info-opt{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.scrum-info-opt div{
+    padding: 30px;
+    height: 250px;
+    align-content: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+.scrum-info-opt div:hover{
+    transform: scale(1.1);
+}
+.experience-info-opt div{
+    height: 250px;
+    padding: 30px;
+    align-content: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+.experience-info-opt div:hover{
+    transform: scale(1.1);
+}
+.scrum-opt1 .icon, .scrum-opt2 .icon, .scrum-opt3 .icon{
+    font-size: 30px;
+}
+.experience-opt1 .icon, .experience-opt2 .icon, .experience-opt3 .icon{
+    font-size: 30px;
+}
 
+
+
+    
 
 /*PROJECTS CONTAINER*/
 .projects-container {
@@ -150,7 +250,7 @@ header{
 .projects-tittle h1 {
     font-size: 64px;
     font-weight: lighter;
-    position: relative;
+    border-bottom: 2px solid white;
 }
 .link {
     position: absolute;
