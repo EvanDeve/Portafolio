@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/effects.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Evan Marin | Web Developer</title>
 </head>
@@ -167,21 +168,23 @@
 
     <footer class="footer-container hidden">
         <div class="form-container">
-            <form action="" id="forma">
+            <form name="contacto" method="POST" id="forma" netlify>
                 <div class="form-group">
                     <label for="nombre">Name</label>
                     <input type="text" name="nombre" id="nombre" required="true">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" required="true">
+                    <input type="email" name="email" id="email" required="true">
                 </div>
                 <div class="form-group">
                     <label for="descripcion">Description</label>
                     <textarea name="descripcion" id="descripcion" cols="50" rows="10"></textarea>
                 </div>
-                <button class="form-submit-btn" onclick="mostrarInformacion()">Submit</button>
+                <div data-netlify-recaptcha="true"></div>
+                <button type="submit" class="form-submit-btn">Submit</button>
             </form>
+            <div id="modal-exito">¡Mensaje enviado con éxito! ✅</div>
         </div>
         <div class="footer_links-container">
             <div class="email-contact">
@@ -197,7 +200,7 @@
 
     </footer>
 
-    <script src="js/formulario.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/scroll.js"></script>
 </body>
 
