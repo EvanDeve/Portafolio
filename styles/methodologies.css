@@ -1,0 +1,193 @@
+/* Methodology Section Styles */
+.methodology-container {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #181818 0%, #202020 100%);
+  position: relative;
+}
+
+.methodology-container::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #3774e7, transparent);
+}
+
+.methods-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.methods-heading h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.methods-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.methods-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.method-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px 30px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.method-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.method-icon {
+  font-size: 48px;
+  color: #3774e7;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.method-card:hover .method-icon {
+  transform: scale(1.1);
+  color: #5596ff;
+}
+
+.method-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.method-card h2:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: #3774e7;
+  transition: width 0.3s ease;
+}
+
+.method-card:hover h2:after {
+  width: 80px;
+}
+
+.method-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.method-progress {
+  height: 100%;
+  width: 85%;
+  background: linear-gradient(90deg, #3774e7, #6ab0ff);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.method-description {
+  color: #ccc;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.method-details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.method-detail-item {
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.method-detail-item:hover {
+  background: rgba(55, 116, 231, 0.2);
+  transform: translateY(-5px);
+}
+
+.method-detail-item i {
+  font-size: 24px;
+  color: #3774e7;
+  margin-bottom: 10px;
+}
+
+.method-detail-item h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.method-detail-item p {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+/* Para que cada tarjeta tenga un nivel de progreso diferente */
+.method-card:nth-child(1) .method-progress {
+  width: 90%;
+}
+
+.method-card:nth-child(2) .method-progress {
+  width: 85%;
+}
+
+.method-card:nth-child(3) .method-progress {
+  width: 80%;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .methods-cards-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .method-card {
+    padding: 30px 20px;
+  }
+  
+  .methods-heading h1 {
+    font-size: 36px;
+  }
+} 

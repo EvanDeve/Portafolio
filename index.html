@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/effects.css">
+    <meta name="description" content="Evan Marin - Professional Web Developer specializing in modern, responsive and user-friendly websites">
+    <meta name="keywords" content="web developer, frontend, UI/UX, responsive design, JavaScript, HTML, CSS">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/methodologies.css">
     <link rel="stylesheet" href="styles/responsive.css">
-    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Evan Marin | Web Developer</title>
 </head>
@@ -32,9 +34,9 @@
         <div class="hero-info">
             <div class="hero-container">
                 <div class="info-container">
-                    <h1>Pleased to meet you!<br>I'am <span class="underline">Evan Marin.</span></h1>
-                    <p>Web developer, specialized in creating modern sites,<br> Functional and attractive,
-                        optimized for an excellent user experience.
+                    <h1>Pleased to meet you!<br>I'm <span class="underline">Evan Marin.</span></h1>
+                    <p>Frontend Developer passionate about creating modern and responsive websites.<br>
+                       I transform ideas into clean, functional, and visually appealing digital experiences.</p>
                 </div>
                 <div class="links">
                     <a href="#" class="scroll-to-projects">See projects<i class="bi bi-chevron-right"></i></a>
@@ -42,82 +44,119 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="img/istockphoto-1389348844-612x612-removebg-preview.png" alt="">
+                <img src="img/istockphoto-1389348844-612x612-removebg-preview.png" alt="Evan Marin profile">
             </div>
         </div>
-
     </header>
 
     <section class="knowledge-container">
-        <div class="knowledge  hidden">
-            <h1>HTML</h1>
-            <p>2 years of experience</p>
+        <div class="knowledge hidden">
+            <h1>HTML5</h1>
+            <p><i class="bi bi-stars"></i> Advanced</p>
         </div>
-        <div class="knowledge  hidden">
+        <div class="knowledge hidden">
             <h1>JavaScript</h1>
-            <p>1 year of experience</p>
+            <p><i class="bi bi-stars"></i> Intermediate</p>
         </div>
-        <div class="knowledge  hidden">
-            <h1>CSS</h1>
-            <p>2 years of experience</p>
+        <div class="knowledge hidden">
+            <h1>CSS3</h1>
+            <p><i class="bi bi-stars"></i> Advanced</p>
         </div>
     </section>
 
     <section class="methodology-container">
-        <div class="methodologies">
-            <div class="methodologies-tittle hidden">
-                <h1><span class="underline">METHODOLOGIES</span></h1>
-            </div>
+        <div class="methods-heading hidden">
+            <h1><span class="underline">METHODOLOGIES</span></h1>
+            <p class="methods-subtitle">My approach to web development combines agile methodologies with user-centered design principles</p>
+        </div>
 
-            <div class="scrum-container hidden">
-                <div class="scrum-tittle">
-                    <h2>SCRUM</h2>
+        <div class="methods-cards-container">
+            <!-- SCRUM Card -->
+            <div class="method-card hidden">
+                <div class="method-icon">
+                    <i class="bi bi-kanban"></i>
                 </div>
-                <div class="scrum-info">
-                    <p id="scrum-info">I use Scrum to organize and optimize the web development process, ensuring iterative deliveries and continuous improvement.</p>
-                    <div class="scrum-info-opt">
-                        <div class="scrum-opt1">
-                            <i class="bi bi-people icon"></i>
-                            <h2>Sprint planning</h2>
-                            <p>I define tasks and objectives in short cycles to deliver constant progress.</p>
-                        </div>
-                        <div class="scrum-opt2">
-                            <i class="bi bi-camera-video-fill icon"></i>
-                            <h2>Follow-up meetings</h2>
-                            <p>I evaluate progress and adjust development according to project needs.</p>
-                        </div>
-                        <div class="scrum-opt3">
-                            <i class="bi bi-pencil-square icon"></i>
-                            <h2>Continuous feedback</h2>
-                            <p>I maintain communication with clients or users to improve the final experience.</p>
-                        </div>
+                <h2>AGILE & SCRUM</h2>
+                <div class="method-bar">
+                    <div class="method-progress"></div>
+                </div>
+                <p class="method-description">I use Agile methodologies to deliver iterative solutions with continuous improvement.</p>
+                
+                <div class="method-details">
+                    <div class="method-detail-item">
+                        <i class="bi bi-people-fill"></i>
+                        <h3>Collaboration</h3>
+                        <p>Working closely with clients throughout the development process</p>
                     </div>
-
+                    <div class="method-detail-item">
+                        <i class="bi bi-calendar-check"></i>
+                        <h3>Sprint Planning</h3>
+                        <p>Organized development cycles with clear objectives</p>
+                    </div>
+                    <div class="method-detail-item">
+                        <i class="bi bi-arrows-angle-contract"></i>
+                        <h3>Adaptability</h3>
+                        <p>Flexible approach to accommodate changing requirements</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="experience-container hidden">
-                <div class="experience-tittle">
-                    <h2>UX/UI</h2>
+            <!-- UX/UI Card -->
+            <div class="method-card hidden">
+                <div class="method-icon">
+                    <i class="bi bi-palette"></i>
                 </div>
-                <div class="experience-info">
-                    <p id="experience-info">I apply UX/UI principles to design functional, engaging, and accessible websites.</p>
-                    <div class="experience-info-opt">
-                        <div class="experience-opt1">
-                            <i class="bi bi-graph-up icon"></i>
-                            <h2>Research and analysis</h2>
-                            <p>I evaluate user needs and analyze the competition.</p>
-                        </div>
-                        <div class="experience-opt2">
-                            <i class="bi bi-bounding-box icon"></i>
-                            <h2>Wireframing and prototyping</h2>
-                            <p>I design the structure of the site before moving on to development, using tools such as Figma.</p>
-                        </div>
-                        <div class="experience-opt3">
-                            <i class="bi bi-phone-fill icon"></i>
-                            <h2>Accessibility and usability</h2>
-                            <p>I guarantee intuitive interfaces adapted to different devices (mobile-first).</p>
-                        </div>
+                <h2>UX/UI DESIGN</h2>
+                <div class="method-bar">
+                    <div class="method-progress"></div>
+                </div>
+                <p class="method-description">I create intuitive, engaging, and accessible user experiences through thoughtful design.</p>
+                
+                <div class="method-details">
+                    <div class="method-detail-item">
+                        <i class="bi bi-search"></i>
+                        <h3>User Research</h3>
+                        <p>Understanding user needs and behavior to inform design decisions</p>
+                    </div>
+                    <div class="method-detail-item">
+                        <i class="bi bi-pencil-square"></i>
+                        <h3>Wireframing</h3>
+                        <p>Creating structural blueprints before implementation</p>
+                    </div>
+                    <div class="method-detail-item">
+                        <i class="bi bi-phone"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring perfect functionality across all device sizes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Card -->
+            <div class="method-card hidden">
+                <div class="method-icon">
+                    <i class="bi bi-speedometer2"></i>
+                </div>
+                <h2>OPTIMIZATION</h2>
+                <div class="method-bar">
+                    <div class="method-progress"></div>
+                </div>
+                <p class="method-description">I prioritize performance and efficiency in every project I undertake.</p>
+                
+                <div class="method-details">
+                    <div class="method-detail-item">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Speed</h3>
+                        <p>Fast-loading websites with optimized assets</p>
+                    </div>
+                    <div class="method-detail-item">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Clean Code</h3>
+                        <p>Well-structured, maintainable, and efficient code</p>
+                    </div>
+                    <div class="method-detail-item">
+                        <i class="bi bi-graph-up"></i>
+                        <h3>SEO</h3>
+                        <p>Building for better visibility in search engines</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +164,6 @@
     </section>
 
     <section class="projects-container">
-
         <div class="projects-tittle hidden">
             <div class="tittle">
                 <h1><span class="underline">PROJECTS</span></h1>
@@ -134,34 +172,24 @@
 
         <div class="projects hidden">
             <div class="project hidden">
-                <img src="img/Paul-Photography.PNG" alt="Vista previa del proyecto">
+                <img src="img/Paul-Photography.PNG" alt="Paul Photography website preview">
                 <h3>Paul-Photography</h3>
                 <a href="https://evandeve.github.io/Paul-Photography/" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
             </div>
             <div class="project hidden">
-                <img src="img/ejemplo.PNG" alt="Vista previa del proyecto">
-                <h3>Nombre del Proyecto</h3>
-                <a href="https://tuproyecto.com" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
+                <img src="img/ejemplo.PNG" alt="Project preview">
+                <h3>Project Name</h3>
+                <a href="#" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
             </div>
             <div class="project hidden">
-                <img src="img/ejemplo.PNG" alt="Vista previa del proyecto">
-                <h3>Nombre del Proyecto</h3>
-                <a href="https://tuproyecto.com" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
+                <img src="img/ejemplo.PNG" alt="Project preview">
+                <h3>Project Name</h3>
+                <a href="#" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
             </div>
             <div class="project hidden">
-                <img src="img/ejemplo.PNG" alt="Vista previa del proyecto">
-                <h3>Nombre del Proyecto</h3>
-                <a href="https://tuproyecto.com" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
-            </div>
-            <div class="project hidden">
-                <img src="img/ejemplo.PNG" alt="Vista previa del proyecto">
-                <h3>Nombre del Proyecto</h3>
-                <a href="https://tuproyecto.com" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
-            </div>
-            <div class="project hidden">
-                <img src="img/ejemplo.PNG" alt="Vista previa del proyecto">
-                <h3>Nombre del Proyecto</h3>
-                <a href="https://tuproyecto.com" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
+                <img src="img/ejemplo.PNG" alt="Project preview">
+                <h3>Project Name</h3>
+                <a href="#" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
             </div>
         </div>
     </section>
@@ -184,11 +212,11 @@
                 <div data-netlify-recaptcha="true"></div>
                 <button type="submit" class="form-submit-btn">Submit</button>
             </form>
-            <div id="modal-exito">¡Mensaje enviado con éxito! ✅</div>
+            <div id="modal-exito">Message sent successfully! ✅</div>
         </div>
         <div class="footer_links-container">
             <div class="email-contact">
-                <a href="#">evanmarin.developer@gmail.com</a>
+                <a href="mailto:evanmarin.developer@gmail.com">evanmarin.developer@gmail.com</a>
             </div>
             <nav>
                 <li><a href="https://github.com/EvanDeve" target="_blank"><img src="img/github-mark-white.png"
@@ -197,7 +225,6 @@
                         target="_blank"><img src="img/In-White-34.png" alt="linkenin_logo" height="29px"></a></li>
             </nav>
         </div>
-
     </footer>
 
     <script src="js/form.js"></script>

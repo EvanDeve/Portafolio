@@ -1,9 +1,9 @@
 document.getElementById("forma").addEventListener("submit", function(e) {
-    e.preventDefault(); // Evita el envío tradicional
+    e.preventDefault(); // Prevents traditional submission
     
     const formData = new FormData(this);
     
-    // Envía los datos a Netlify
+    // Sends data to Netlify
     fetch("/", {
       method: "POST",
       body: new URLSearchParams(formData).toString(),
@@ -12,20 +12,20 @@ document.getElementById("forma").addEventListener("submit", function(e) {
       },
     })
     .then(() => {
-      // Muestra el modal
+      // Shows the modal
       const modal = document.getElementById("modal-exito");
       modal.style.display = "block";
       
-      // Oculta el modal después de 3 segundos
+      // Hides the modal after 3 seconds
       setTimeout(() => {
         modal.style.display = "none";
       }, 3000);
       
-      // Opcional: Resetear el formulario
+      // Optional: Reset the form
       this.reset();
     })
     .catch((error) => {
       console.error("Error:", error);
-      alert("Hubo un error al enviar el formulario.");
+      alert("There was an error submitting the form. Please try again.");
     });
   });

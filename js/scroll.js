@@ -30,8 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
+                
+                // Añade animación especial para las tarjetas de metodologías
+                if (entry.target.classList.contains("method-card")) {
+                    // Agrega un pequeño retraso para que aparezcan secuencialmente
+                    const index = Array.from(document.querySelectorAll(".method-card")).indexOf(entry.target);
+                    entry.target.style.transitionDelay = `${0.2 * index}s`;
+                }
             } else {
-                entry.target.classList.remove("show"); //Ahora desaparece cuando ya no está en pantalla
+                // Solo para elementos que no son tarjetas de metodología
+                if (!entry.target.classList.contains("method-card")) {
+                    entry.target.classList.remove("show");
+                }
             }
         });
     }, {
@@ -39,6 +49,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     hiddenElements.forEach((el) => observer.observe(el));
+    
+    // Añade un efecto de hover en las tarjetas de metodología para mostrar detalles
+    const methodCards = document.querySelectorAll(".method-card");
+    methodCards.forEach(card => {
+        card.addEventListener("mouseenter", () => {
+            card.classList.add("expanded");
+        });
+        
+        card.addEventListener("mouseleave", () => {
+            card.classList.remove("expanded");
+        });
+    });
 });
 
 

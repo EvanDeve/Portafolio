@@ -88,3 +88,85 @@
         margin-top: 20px;
     }
 }
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .hero-info {
+    max-width: 90%;
+  }
+  
+  .hero-container h1 {
+    font-size: 48px;
+  }
+  
+  .project img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-info {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .hero-image {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  
+  .hero-image img {
+    max-width: 300px;
+  }
+  
+  .methodologies-tittle h1 {
+    width: 100%;
+    font-size: 48px;
+  }
+  
+  .projects {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .name-nav {
+    margin-left: 0;
+  }
+  
+  .social-medias {
+    margin-right: 0;
+  }
+  
+  .knowledge-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .form-container {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container h1 {
+    font-size: 36px;
+  }
+  
+  .projects-tittle h1 {
+    font-size: 36px;
+  }
+  
+  .form-container .form-group input,
+  .form-container .form-group textarea {
+    width: 90%;
+  }
+}
