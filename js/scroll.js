@@ -37,11 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     const index = Array.from(document.querySelectorAll(".method-card")).indexOf(entry.target);
                     entry.target.style.transitionDelay = `${0.2 * index}s`;
                 }
-            } else {
-                // Solo para elementos que no son tarjetas de metodología
-                if (!entry.target.classList.contains("method-card")) {
-                    entry.target.classList.remove("show");
-                }
+                
+                // Desconectar el observer una vez que se ha mostrado el elemento
+                observer.unobserve(entry.target);
             }
         });
     }, {

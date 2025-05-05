@@ -16,10 +16,28 @@
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <div class="nav-container">
             <div class="name-nav">
                 <h1>EVAN MARIN</h1>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="main-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Home</a></li>
+                        <li><a href="#knowledge-container">Knowledge</a></li>
+                        <li><a href="#methodology-container">Methodology</a></li>
+                        <li><a href="#projects-container">Projects</a></li>
+                        <li><a href="#footer-container">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="social-medias">
                 <nav>
@@ -49,7 +67,7 @@
         </div>
     </header>
 
-    <section class="knowledge-container">
+    <section class="knowledge-container" id="knowledge-container">
         <div class="knowledge hidden">
             <h1>HTML5</h1>
             <p><i class="bi bi-stars"></i> Advanced</p>
@@ -64,7 +82,7 @@
         </div>
     </section>
 
-    <section class="methodology-container">
+    <section class="methodology-container" id="methodology-container">
         <div class="methods-heading hidden">
             <h1><span class="underline">METHODOLOGIES</span></h1>
             <p class="methods-subtitle">My approach to web development combines agile methodologies with user-centered design principles</p>
@@ -163,7 +181,7 @@
         </div>
     </section>
 
-    <section class="projects-container">
+    <section class="projects-container" id="projects-container">
         <div class="projects-tittle hidden">
             <div class="tittle">
                 <h1><span class="underline">PROJECTS</span></h1>
@@ -174,17 +192,27 @@
             <div class="project hidden">
                 <img src="img/Paul-Photography.PNG" alt="Paul Photography website preview">
                 <h3>Paul-Photography</h3>
+                <div class="project-tech">
+                    <img src="img/html5.png" alt="HTML5" title="HTML5">
+                    <img src="img/css3.png" alt="CSS3" title="CSS3">
+                    <img src="img/js.png" alt="JavaScript" title="JavaScript">
+                </div>
                 <a href="https://evandeve.github.io/Paul-Photography/" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
             </div>
             <div class="project hidden">
                 <img src="img/ShawnMendes.PNG" alt="Project preview">
                 <h3>Shawn Mendes - FanPage</h3>
+                <div class="project-tech">
+                    <img src="img/html5.png" alt="HTML5" title="HTML5">
+                    <img src="img/css3.png" alt="CSS3" title="CSS3">
+                    <img src="img/js.png" alt="JavaScript" title="JavaScript">
+                </div>
                 <a href="https://shawnmendescr.netlify.app/" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
             </div>
         </div>
     </section>
 
-    <footer class="footer-container hidden">
+    <footer class="footer-container hidden" id="footer-container">
         <div class="form-container">
             <form name="contacto" method="POST" id="forma" netlify>
                 <div class="form-group">
@@ -219,6 +247,7 @@
 
     <script src="js/form.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

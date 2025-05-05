@@ -46,6 +46,111 @@ header {
   font-weight: lighter;
 }
 
+/* Estilos para el menú hamburguesa */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+}
+
+.hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger-icon span:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger-icon span:nth-child(3) {
+  top: 18px;
+}
+
+.hamburger-menu.active .hamburger-icon span:nth-child(1) {
+  top: 9px;
+  transform: rotate(135deg);
+}
+
+.hamburger-menu.active .hamburger-icon span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger-menu.active .hamburger-icon span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-135deg);
+}
+
+/* Estilos para la navegación principal */
+.main-nav {
+  flex-grow: 1;
+  margin: 0 30px;
+}
+
+.main-nav nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-nav nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.main-nav nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #3774e7;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.main-nav nav ul li a:hover {
+  color: #3774e7;
+}
+
+.main-nav nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Estilos para enlaces activos en la navegación */
+.main-nav nav ul li a.active {
+  color: #3774e7;
+}
+
+.main-nav nav ul li a.active::after {
+  width: 100%;
+}
+
 .social-medias {
   margin-right: 80px;
 }
@@ -215,17 +320,60 @@ header {
   padding: 20px 0;
 }
 
+/* Estilos para los logos de tecnologías */
+.project-tech {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.project-tech img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  border-radius: 0;
+}
+
+.project-tech img:hover {
+  transform: translateY(-5px);
+}
+
 .project a {
-  text-decoration-color: #3774e7;
+  display: inline-block;
+  text-decoration: none;
   color: white;
+  background-color: #3774e7;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
   transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(55, 116, 231, 0.2);
   position: relative;
   overflow: hidden;
 }
 
+.project a i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
 .project a:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(55, 116, 231, 0.3);
+  background-color: #2a60c8;
+  box-shadow: 0 6px 15px rgba(55, 116, 231, 0.4);
+}
+
+.project a:hover i {
+  transform: translateX(4px);
+}
+
+.project a:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(55, 116, 231, 0.3);
 }
 
 /* Footer */
