@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Evan Marin - Professional Web Developer specializing in modern, responsive and user-friendly websites">
-    <meta name="keywords" content="web developer, frontend, UI/UX, responsive design, JavaScript, HTML, CSS">
+    <meta name="description" content="Evan Marin - Desarrollador Web profesional especializado en sitios web modernos, responsivos y fáciles de usar">
+    <meta name="keywords" content="desarrollador web, frontend, UI/UX, diseño responsivo, JavaScript, HTML, CSS">
+    <meta name="theme-color" content="#3774e7">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/methodologies.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Evan Marin | Web Developer</title>
+    <title>Evan Marin | Desarrollador Web</title>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             <div class="name-nav">
                 <h1>EVAN MARIN</h1>
             </div>
-            <div class="hamburger-menu">
+            <div class="hamburger-menu" aria-label="Menú de navegación">
                 <div class="hamburger-icon">
                     <span></span>
                     <span></span>
@@ -31,20 +32,19 @@
             <div class="main-nav">
                 <nav>
                     <ul>
-                        <li><a href="#inicio">Home</a></li>
-                        <li><a href="#knowledge-container">Knowledge</a></li>
-                        <li><a href="#methodology-container">Methodology</a></li>
-                        <li><a href="#projects-container">Projects</a></li>
-                        <li><a href="#footer-container">Contact</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#knowledge-container">Conocimientos</a></li>
+                        <li><a href="#methodology-container">Metodologías</a></li>
+                        <li><a href="#projects-container">Proyectos</a></li>
+                        <li><a href="#pricing-container">Planes</a></li>
+                        <li><a href="#footer-container">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="social-medias">
                 <nav>
-                    <li><a href="https://github.com/EvanDeve" target="_blank"><img src="img/github-mark-white.png"
-                                alt="github_logo" height="25px"></a></li>
-                    <li><a href="https://www.linkedin.com/in/evan-abdiel-mar%C3%ADn-jim%C3%A9nez-7982b232a/"
-                            target="_blank"><img src="img/In-White-34.png" alt="linkenin_logo" height="29px"></a></li>
+                    <li><a href="https://github.com/EvanDeve" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/evan-abdiel-mar%C3%ADn-jim%C3%A9nez-7982b232a/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 </nav>
             </div>
         </div>
@@ -52,17 +52,63 @@
         <div class="hero-info">
             <div class="hero-container">
                 <div class="info-container">
-                    <h1>Pleased to meet you!<br>I'm <span class="underline">Evan Marin.</span></h1>
-                    <p>Frontend Developer passionate about creating modern and responsive websites.<br>
-                       I transform ideas into clean, functional, and visually appealing digital experiences.</p>
+                    <h1>¡Encantado de conocerte!<br>Soy <span class="underline">Evan Marin.</span></h1>
+                    <p>Desarrollador Frontend apasionado por crear sitios web modernos y responsivos.<br>
+                       Transformo ideas en experiencias digitales limpias, funcionales y visualmente atractivas.</p>
                 </div>
                 <div class="links">
-                    <a href="#" class="scroll-to-projects">See projects<i class="bi bi-chevron-right"></i></a>
-                    <a href="#" class="scroll-to-contact">Contact<i class="bi bi-chevron-right"></i></a>
+                    <a href="#projects-container" class="scroll-to-projects">Ver proyectos<i class="bi bi-chevron-right"></i></a>
+                    <a href="#footer-container" class="scroll-to-contact">Contactar<i class="bi bi-chevron-right"></i></a>
+                    <a href="files/CV-Evan-Marin.pdf" class="download-cv" download>Descargar CV<i class="bi bi-download"></i></a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="img/istockphoto-1389348844-612x612-removebg-preview.png" alt="Evan Marin profile">
+                <div class="professional-element">
+                    <div class="profile-badge">
+                        <div class="badge-header">
+                            <div class="badge-logo">EM</div>
+                            <div class="badge-title">
+                                <h3>Evan Marin</h3>
+                                <span>Desarrollador Frontend</span>
+                            </div>
+                        </div>
+                        <div class="badge-content">
+                            <div class="badge-skill-item">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                </div>
+                            </div>
+                            <div class="badge-skill-item">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="badge-skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="badge-footer">
+                            <span>Desarrollo Web Profesional</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -70,22 +116,43 @@
     <section class="knowledge-container" id="knowledge-container">
         <div class="knowledge hidden">
             <h1>HTML5</h1>
-            <p><i class="bi bi-stars"></i> Advanced</p>
+            <div class="skill-level">
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;">
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+            </div>
+            <p><i class="bi bi-stars"></i> Avanzado</p>
         </div>
         <div class="knowledge hidden">
             <h1>JavaScript</h1>
-            <p><i class="bi bi-stars"></i> Intermediate</p>
+            <div class="skill-level">
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;">
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+            </div>
+            <p><i class="bi bi-stars"></i> Intermedio</p>
         </div>
         <div class="knowledge hidden">
             <h1>CSS3</h1>
-            <p><i class="bi bi-stars"></i> Advanced</p>
+            <div class="skill-level">
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;">
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+            <p><i class="bi bi-stars"></i> Avanzado</p>
         </div>
     </section>
 
     <section class="methodology-container" id="methodology-container">
         <div class="methods-heading hidden">
-            <h1><span class="underline">METHODOLOGIES</span></h1>
-            <p class="methods-subtitle">My approach to web development combines agile methodologies with user-centered design principles</p>
+            <h1><span class="underline">METODOLOGÍAS</span></h1>
+            <p class="methods-subtitle">Mi enfoque al desarrollo web combina metodologías ágiles con principios de diseño centrados en el usuario</p>
         </div>
 
         <div class="methods-cards-container">
@@ -98,23 +165,23 @@
                 <div class="method-bar">
                     <div class="method-progress"></div>
                 </div>
-                <p class="method-description">I use Agile methodologies to deliver iterative solutions with continuous improvement.</p>
+                <p class="method-description">Utilizo metodologías Ágiles para entregar soluciones iterativas con mejora continua.</p>
                 
                 <div class="method-details">
                     <div class="method-detail-item">
                         <i class="bi bi-people-fill"></i>
-                        <h3>Collaboration</h3>
-                        <p>Working closely with clients throughout the development process</p>
+                        <h3>Colaboración</h3>
+                        <p>Trabajo cercano con clientes durante todo el proceso de desarrollo</p>
                     </div>
                     <div class="method-detail-item">
                         <i class="bi bi-calendar-check"></i>
-                        <h3>Sprint Planning</h3>
-                        <p>Organized development cycles with clear objectives</p>
+                        <h3>Planificación de Sprints</h3>
+                        <p>Ciclos de desarrollo organizados con objetivos claros</p>
                     </div>
                     <div class="method-detail-item">
                         <i class="bi bi-arrows-angle-contract"></i>
-                        <h3>Adaptability</h3>
-                        <p>Flexible approach to accommodate changing requirements</p>
+                        <h3>Adaptabilidad</h3>
+                        <p>Enfoque flexible para adaptarse a requisitos cambiantes</p>
                     </div>
                 </div>
             </div>
@@ -124,27 +191,27 @@
                 <div class="method-icon">
                     <i class="bi bi-palette"></i>
                 </div>
-                <h2>UX/UI DESIGN</h2>
+                <h2>DISEÑO UX/UI</h2>
                 <div class="method-bar">
                     <div class="method-progress"></div>
                 </div>
-                <p class="method-description">I create intuitive, engaging, and accessible user experiences through thoughtful design.</p>
+                <p class="method-description">Creo experiencias de usuario intuitivas, atractivas y accesibles mediante un diseño cuidadoso.</p>
                 
                 <div class="method-details">
                     <div class="method-detail-item">
                         <i class="bi bi-search"></i>
-                        <h3>User Research</h3>
-                        <p>Understanding user needs and behavior to inform design decisions</p>
+                        <h3>Investigación de Usuario</h3>
+                        <p>Comprensión de necesidades y comportamientos para informar decisiones de diseño</p>
                     </div>
                     <div class="method-detail-item">
                         <i class="bi bi-pencil-square"></i>
                         <h3>Wireframing</h3>
-                        <p>Creating structural blueprints before implementation</p>
+                        <p>Creación de esquemas estructurales antes de la implementación</p>
                     </div>
                     <div class="method-detail-item">
                         <i class="bi bi-phone"></i>
-                        <h3>Responsive Design</h3>
-                        <p>Ensuring perfect functionality across all device sizes</p>
+                        <h3>Diseño Responsivo</h3>
+                        <p>Garantizando funcionalidad perfecta en todos los tamaños de dispositivos</p>
                     </div>
                 </div>
             </div>
@@ -154,27 +221,27 @@
                 <div class="method-icon">
                     <i class="bi bi-speedometer2"></i>
                 </div>
-                <h2>OPTIMIZATION</h2>
+                <h2>OPTIMIZACIÓN</h2>
                 <div class="method-bar">
                     <div class="method-progress"></div>
                 </div>
-                <p class="method-description">I prioritize performance and efficiency in every project I undertake.</p>
+                <p class="method-description">Priorizo el rendimiento y la eficiencia en cada proyecto que emprendo.</p>
                 
                 <div class="method-details">
                     <div class="method-detail-item">
                         <i class="bi bi-lightning-charge"></i>
-                        <h3>Speed</h3>
-                        <p>Fast-loading websites with optimized assets</p>
+                        <h3>Velocidad</h3>
+                        <p>Sitios web de carga rápida con recursos optimizados</p>
                     </div>
                     <div class="method-detail-item">
                         <i class="bi bi-code-slash"></i>
-                        <h3>Clean Code</h3>
-                        <p>Well-structured, maintainable, and efficient code</p>
+                        <h3>Código Limpio</h3>
+                        <p>Código bien estructurado, mantenible y eficiente</p>
                     </div>
                     <div class="method-detail-item">
                         <i class="bi bi-graph-up"></i>
                         <h3>SEO</h3>
-                        <p>Building for better visibility in search engines</p>
+                        <p>Construyendo para mejor visibilidad en motores de búsqueda</p>
                     </div>
                 </div>
             </div>
@@ -184,66 +251,132 @@
     <section class="projects-container" id="projects-container">
         <div class="projects-tittle hidden">
             <div class="tittle">
-                <h1><span class="underline">PROJECTS</span></h1>
+                <h1><span class="underline">PROYECTOS</span></h1>
             </div>
         </div>
 
         <div class="projects hidden">
             <div class="project hidden">
-                <img src="img/Paul-Photography.PNG" alt="Paul Photography website preview">
+                <img src="img/Paul-Photography.PNG" alt="Vista previa del sitio web Paul Photography" loading="lazy" width="480" height="auto">
                 <h3>Paul-Photography</h3>
                 <div class="project-tech">
-                    <img src="img/html5.png" alt="HTML5" title="HTML5">
-                    <img src="img/css3.png" alt="CSS3" title="CSS3">
-                    <img src="img/js.png" alt="JavaScript" title="JavaScript">
+                    <img src="img/html5.png" alt="HTML5" title="HTML5" width="30" height="30">
+                    <img src="img/css3.png" alt="CSS3" title="CSS3" width="30" height="30">
+                    <img src="img/js.png" alt="JavaScript" title="JavaScript" width="30" height="30">
                 </div>
-                <a href="https://evandeve.github.io/Paul-Photography/" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
+                <a href="https://evandeve.github.io/Paul-Photography/" target="_blank" rel="noopener">Ver proyecto<i class="bi bi-chevron-right"></i></a>
             </div>
             <div class="project hidden">
-                <img src="img/ShawnMendes.PNG" alt="Project preview">
+                <img src="img/ShawnMendes.PNG" alt="Vista previa del proyecto" loading="lazy" width="480" height="auto">
                 <h3>Shawn Mendes - FanPage</h3>
                 <div class="project-tech">
-                    <img src="img/html5.png" alt="HTML5" title="HTML5">
-                    <img src="img/css3.png" alt="CSS3" title="CSS3">
-                    <img src="img/js.png" alt="JavaScript" title="JavaScript">
+                    <img src="img/html5.png" alt="HTML5" title="HTML5" width="30" height="30">
+                    <img src="img/css3.png" alt="CSS3" title="CSS3" width="30" height="30">
+                    <img src="img/js.png" alt="JavaScript" title="JavaScript" width="30" height="30">
                 </div>
-                <a href="https://shawnmendescr.netlify.app/" target="_blank">See project<i class="bi bi-chevron-right"></i></a>
+                <a href="https://shawnmendescr.netlify.app/" target="_blank" rel="noopener">Ver proyecto<i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-container" id="pricing-container">
+        <div class="pricing-title hidden">
+            <h1><span class="underline">PLANES</span></h1>
+            <p>Soluciones web adaptadas a tus necesidades y presupuesto</p>
+        </div>
+
+        <div class="pricing-cards">
+            <div class="pricing-card hidden">
+                <div class="pricing-header">
+                    <h2>Landing Page</h2>
+                    <div class="price">$100 - $500</div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="bi bi-check-circle-fill"></i> Sitio web de una sola página</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Diseño responsive</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Hasta 5 secciones</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Formulario de contacto</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SEO básico</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Entrega en 1 semana</li>
+                        <li class="feature-disabled"><i class="bi bi-x-circle"></i> Páginas adicionales</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#footer-container" class="pricing-button">Contactar</a>
+                </div>
+            </div>
+
+            <div class="pricing-card featured hidden">
+                <div class="pricing-badge">Popular</div>
+                <div class="pricing-header">
+                    <h2>Sitio Web</h2>
+                    <div class="price">$600 - $1000</div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="bi bi-check-circle-fill"></i> Sitio web multi-página</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Hasta 5 páginas</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Diseño premium responsive</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Formulario de contacto avanzado</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SEO optimizado</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Entrega en 3 semanas</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#footer-container" class="pricing-button">Contactar</a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="footer-container hidden" id="footer-container">
-        <div class="form-container">
-            <form name="contacto" method="POST" id="forma" netlify>
-                <div class="form-group">
-                    <label for="nombre">Name</label>
-                    <input type="text" name="nombre" id="nombre" required="true">
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2>Contacto</h2>
+                <p>¿Interesado en trabajar juntos? Contáctame directamente o completa el formulario.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:evanmarin.developer@gmail.com">evanmarin.developer@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Costa Rica</span>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/EvanDeve" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/evan-abdiel-mar%C3%ADn-jim%C3%A9nez-7982b232a/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required="true">
-                </div>
-                <div class="form-group">
-                    <label for="descripcion">Description</label>
-                    <textarea name="descripcion" id="descripcion" cols="50" rows="10"></textarea>
-                </div>
-                <div data-netlify-recaptcha="true"></div>
-                <button type="submit" class="form-submit-btn">Submit</button>
-            </form>
-            <div id="modal-exito">Message sent successfully! ✅</div>
-        </div>
-        <div class="footer_links-container">
-            <div class="email-contact">
-                <a href="mailto:evanmarin.developer@gmail.com">evanmarin.developer@gmail.com</a>
             </div>
-            <nav>
-                <li><a href="https://github.com/EvanDeve" target="_blank"><img src="img/github-mark-white.png"
-                            alt="github_logo" height="25px"></a></li>
-                <li><a href="https://www.linkedin.com/in/evan-abdiel-mar%C3%ADn-jim%C3%A9nez-7982b232a/"
-                        target="_blank"><img src="img/In-White-34.png" alt="linkenin_logo" height="29px"></a></li>
-            </nav>
+            <div class="form-container">
+                <form name="contacto" method="POST" id="forma" netlify>
+                    <h3>Envíame un mensaje</h3>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required="true" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required="true" placeholder="tu.email@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Mensaje</label>
+                        <textarea name="descripcion" id="descripcion" cols="50" rows="6" placeholder="¿En qué puedo ayudarte?"></textarea>
+                    </div>
+                    <div data-netlify-recaptcha="true"></div>
+                    <button type="submit" class="form-submit-btn">Enviar mensaje <i class="bi bi-send-fill"></i></button>
+                </form>
+                <div id="modal-exito">¡Mensaje enviado con éxito! ✅</div>
+            </div>
         </div>
     </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#inicio" class="back-to-top" aria-label="Volver al inicio">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
 
     <script src="js/form.js"></script>
     <script src="js/scroll.js"></script>

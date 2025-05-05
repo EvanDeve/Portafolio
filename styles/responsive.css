@@ -5,6 +5,7 @@
         flex-direction: column;
         height: auto;
         text-align: center;
+        padding: 50px 0;
     }
     .hero-container {
         margin: auto;
@@ -13,6 +14,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+        margin-top: 30px;
     }
     .projects {
         grid-template-columns: 1fr;
@@ -31,6 +33,39 @@
     }
     .main-nav nav ul li a {
         font-size: 14px;
+    }
+    
+    /* Ajustes para tarjeta profesional */
+    .professional-element {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .profile-badge {
+        width: 320px;
+    }
+    
+    /* Ajustes para las metodologías */
+    .methods-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .method-card {
+        width: 80%;
+        max-width: 500px;
+    }
+    
+    /* Ajustes para sección de contacto */
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .contact-info, .form-container {
+        max-width: 90%;
     }
 }
 
@@ -82,18 +117,13 @@
     }
     
     .hero-container h1 {
-        font-size: 30px;
+        font-size: 36px;
+        padding-bottom: 40px;
     }
     
     .hero-container p {
         font-size: 14px;
-    }
-    
-    .scrum-info-opt, .experience-info-opt{
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-bottom: 30px;
     }
     
     .projects-tittle h1 {
@@ -102,6 +132,29 @@
     
     .project img {
         width: 100%;
+    }
+    
+    /* Ajustes para tarjeta profesional */
+    .professional-element {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .profile-badge {
+        width: 290px;
+    }
+    
+    .badge-header {
+        padding: 20px;
+    }
+    
+    .badge-content {
+        padding: 20px;
+    }
+    
+    /* Ajustes para barras de progreso de conocimientos */
+    .skill-level {
+        max-width: 200px;
     }
 }
 
@@ -128,48 +181,222 @@
     .knowledge-container {
         flex-direction: column;
         gap: 40px;
+        padding: 60px 0;
     }
     
     .form-container {
         width: 90%;
         max-width: 400px;
     }
+    
+    /* Ajustes para enlaces en hero */
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .links a {
+        margin-right: 0;
+        width: 80%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    /* Ajustes para títulos de secciones */
+    .methods-heading h1, 
+    .projects-tittle h1,
+    .pricing-title h1 {
+        font-size: 40px;
+    }
+    
+    .methods-subtitle {
+        padding: 0 20px;
+    }
+    
+    /* Ajustes para pricing cards */
+    .pricing-cards {
+        gap: 30px;
+    }
+    
+    .pricing-card {
+        width: 90%;
+        max-width: 320px;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-10px);
+    }
+    
+    /* Ajustes para botón de volver arriba */
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .hero-container h1 {
         font-size: 28px;
+        padding-bottom: 30px;
     }
+    
     .hero-container p {
-        font-size: 12px;
+        font-size: 13px;
+        padding: 0 15px 25px 15px;
     }
+    
     .links a {
-        font-size: 12px;
-        padding: 8px;
+        font-size: 13px;
+        padding: 10px 15px;
     }
+    
     .knowledge-container {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-    .methodologies-tittle h1{
+    
+    .knowledge h1 {
         font-size: 30px;
     }
-    .scrum-info-opt, .experience-info-opt{
-        display: flex;
-        flex-direction: column;
+    
+    .methods-heading h1 {
+        font-size: 32px;
+    }
+    
+    .method-card {
+        width: 90%;
     }
    
     .projects {
         grid-template-columns: 1fr;
     }
+    
+    .projects-tittle h1 {
+        font-size: 32px;
+    }
+    
     .project img {
         width: 100%;
     }
+    
     .footer_links-container nav {
         position: static;
         justify-content: center;
         margin-top: 20px;
+    }
+    
+    /* Ajustes para tarjeta profesional */
+    .professional-element {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .profile-badge {
+        width: 260px;
+    }
+    
+    .badge-logo {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .badge-title h3 {
+        font-size: 18px;
+    }
+    
+    .badge-title span {
+        font-size: 12px;
+    }
+    
+    .badge-content {
+        padding: 15px;
+    }
+    
+    .badge-skill-item {
+        margin-bottom: 12px;
+    }
+    
+    .skill-name {
+        font-size: 14px;
+    }
+    
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .badge-footer {
+        padding: 10px;
+    }
+    
+    .badge-footer span {
+        font-size: 12px;
+    }
+    
+    /* Ajuste de barras de progreso */
+    .skill-level {
+        max-width: 180px;
+    }
+    
+    /* Ajustes para sección de pricing */
+    .pricing-title h1 {
+        font-size: 32px;
+    }
+    
+    .pricing-title p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    
+    .pricing-card {
+        padding: 25px 15px;
+    }
+    
+    /* Ajustes para sección de contacto */
+    .contact-info h2 {
+        font-size: 28px;
+    }
+    
+    .contact-info p {
+        font-size: 14px;
+    }
+    
+    .form-container {
+        padding: 25px 15px;
+    }
+    
+    .form-container h3 {
+        font-size: 20px;
+    }
+    
+    .form-container .form-group input,
+    .form-container .form-group textarea {
+        padding: 10px 12px;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    /* Ajustes para botón volver arriba */
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
     }
 }
 
@@ -227,5 +454,137 @@
   .form-container .form-group input,
   .form-container .form-group textarea {
     width: 90%;
+  }
+}
+
+/* Responsive styles para la sección de planes */
+@media (max-width: 1200px) {
+  .pricing-container {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pricing-title h1 {
+    font-size: 48px;
+  }
+  
+  .pricing-card {
+    width: 250px;
+    padding: 30px 20px;
+  }
+  
+  .pricing-card.featured {
+    transform: scale(1.03);
+  }
+  
+  .pricing-card.featured:hover {
+    transform: scale(1.03) translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .pricing-card {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .pricing-card.featured {
+    transform: none;
+    order: -1;
+  }
+  
+  .pricing-card.featured:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-title h1 {
+    font-size: 36px;
+  }
+  
+  .pricing-title p {
+    font-size: 16px;
+  }
+  
+  .pricing-card {
+    padding: 25px 15px;
+  }
+}
+
+/* Responsive para la sección de contacto */
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 0 20px;
+  }
+  
+  .contact-info, .form-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-info {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .contact-item {
+    justify-content: center;
+  }
+  
+  .contact-social {
+    justify-content: center;
+  }
+  
+  .form-container {
+    width: 90%;
+  }
+  
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info h2 {
+    font-size: 28px;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+  }
+  
+  .form-container {
+    padding: 20px 15px;
+  }
+  
+  .form-container h3 {
+    font-size: 20px;
+  }
+  
+  .form-container .form-group input,
+  .form-container .form-group textarea {
+    padding: 10px 12px;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
   }
 }
