@@ -36,7 +36,7 @@
                         <li><a href="#knowledge-container">Conocimientos</a></li>
                         <li><a href="#methodology-container">Metodologías</a></li>
                         <li><a href="#projects-container">Proyectos</a></li>
-                        <li><a href="#pricing-container">Planes</a></li>
+                        <li><a href="#pricing-container">Paquetes</a></li>
                         <li><a href="#footer-container">Contacto</a></li>
                     </ul>
                 </nav>
@@ -70,38 +70,6 @@
                             <div class="badge-title">
                                 <h3>Evan Marin</h3>
                                 <span>Desarrollador Frontend</span>
-                            </div>
-                        </div>
-                        <div class="badge-content">
-                            <div class="badge-skill-item">
-                                <span class="skill-name">HTML5</span>
-                                <div class="skill-dots">
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                </div>
-                            </div>
-                            <div class="badge-skill-item">
-                                <span class="skill-name">CSS3</span>
-                                <div class="skill-dots">
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot"></span>
-                                </div>
-                            </div>
-                            <div class="badge-skill-item">
-                                <span class="skill-name">JavaScript</span>
-                                <div class="skill-dots">
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="badge-footer">
@@ -149,6 +117,17 @@
         </div>
         <div class="knowledge hidden">
             <h1>React</h1>
+            <div class="skill-level">
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 20%;">
+                        <span class="skill-percent">20%</span>
+                    </div>
+                </div>
+            </div>
+            <p><i class="bi bi-stars"></i> Principiante</p>
+        </div>
+        <div class="knowledge hidden">
+            <h1>Typescript</h1>
             <div class="skill-level">
                 <div class="skill-bar">
                     <div class="skill-progress" style="width: 20%;">
@@ -268,16 +247,6 @@
 
         <div class="projects hidden">
             <div class="project hidden">
-                <img src="img/Paul-Photography.PNG" alt="Vista previa del sitio web Paul Photography" loading="lazy" width="480" height="auto">
-                <h3>Paul-Photography</h3>
-                <div class="project-tech">
-                    <img src="img/html5.png" alt="HTML5" title="HTML5" width="30" height="30">
-                    <img src="img/css3.png" alt="CSS3" title="CSS3" width="30" height="30">
-                    <img src="img/js.png" alt="JavaScript" title="JavaScript" width="30" height="30">
-                </div>
-                <a href="https://evandeve.github.io/Paul-Photography/" target="_blank" rel="noopener">Ver proyecto<i class="bi bi-chevron-right"></i></a>
-            </div>
-            <div class="project hidden">
                 <img src="img/ShawnMendes.PNG" alt="Vista previa del proyecto" loading="lazy" width="480" height="auto">
                 <h3>Shawn Mendes - FanPage</h3>
                 <div class="project-tech">
@@ -300,23 +269,22 @@
 
     <section class="pricing-container" id="pricing-container">
         <div class="pricing-title hidden">
-            <h1><span class="underline">PLANES</span></h1>
+            <h1><span class="underline">PPAQUETES</span></h1>
             <p>Soluciones web adaptadas a tus necesidades y presupuesto</p>
         </div>
 
         <div class="pricing-cards">
             <div class="pricing-card hidden">
                 <div class="pricing-header">
-                    <h2>Landing Page</h2>
-                    <div class="price">$100 - $500</div>
+                    <h2>Paquete Básico</h2>
+                    <div class="price">$70 - $100</div>
                 </div>
                 <div class="pricing-features">
                     <ul>
                         <li><i class="bi bi-check-circle-fill"></i> Sitio web de una sola página</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Diseño responsive</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Diseño responsive (móvil y escritorio)</li>
                         <li><i class="bi bi-check-circle-fill"></i> Hasta 5 secciones</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Formulario de contacto</li>
-                        <li><i class="bi bi-check-circle-fill"></i> SEO básico</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Dominio (gratis)</li>
                         <li><i class="bi bi-check-circle-fill"></i> Entrega en 1 semana</li>
                         <li class="feature-disabled"><i class="bi bi-x-circle"></i> Páginas adicionales</li>
                     </ul>
@@ -329,17 +297,36 @@
             <div class="pricing-card featured hidden">
                 <div class="pricing-badge">Popular</div>
                 <div class="pricing-header">
-                    <h2>Sitio Web</h2>
-                    <div class="price">$600 - $1000</div>
+                    <h2>Paquete Estándar</h2>
+                    <div class="price">$120 - $180</div>
                 </div>
                 <div class="pricing-features">
                     <ul>
-                        <li><i class="bi bi-check-circle-fill"></i> Sitio web multi-página</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Hasta 5 páginas</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Diseño premium responsive</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Formulario de contacto avanzado</li>
-                        <li><i class="bi bi-check-circle-fill"></i> SEO optimizado</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Entrega en 3 semanas</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Todo lo del básico</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Dominio personalizado (.com) por un año</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Mapa de ubicación (Google Maps)</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Botón con WhatsApp con mensaje predefinido</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Formulario de contacto funcional (opcional)</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Entrega en 1 semana</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#footer-container" class="pricing-button">Contactar</a>
+                </div>
+            </div>
+
+            <div class="pricing-card hidden">
+                <div class="pricing-header">
+                    <h2>Paquete Profesional</h2>
+                    <div class="price">$200 - $300</div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="bi bi-check-circle-fill"></i> Todo lo anterior</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Copywriting profesional</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SEO basico</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Mantenimiento por 30 días</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Entrega en 2 semanas</li>
                     </ul>
                 </div>
                 <div class="pricing-cta">
