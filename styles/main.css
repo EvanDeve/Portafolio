@@ -671,6 +671,11 @@ footer {
 }
 
 .pricing-cta {
+  display: flex;
+  margin: auto;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 150px;
   text-align: center;
 }
 
