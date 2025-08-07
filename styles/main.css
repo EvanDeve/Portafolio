@@ -588,7 +588,7 @@ footer {
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
-  max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -596,7 +596,7 @@ footer {
   background-color: #252525;
   border-radius: 15px;
   padding: 40px 30px;
-  width: 320px;
+  width:350px;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -645,6 +645,10 @@ footer {
   font-size: 42px;
   font-weight: bold;
   color: #3774e7;
+}
+
+.pricing-features {
+  min-height: 400px;
 }
 
 .pricing-features ul {
